@@ -45,6 +45,20 @@ public class User {
         this.date_cmnd = date_cmnd;
     }
 
+    public User(String name, String email, String sex, String phone, String cmnd, String place_cmnd, Date date_cmnd) {
+        this.name = name;
+        this.email = email;
+        this.sex = sex;
+        this.phone = phone;
+        this.cmnd = cmnd;
+        this.place_cmnd = place_cmnd;
+        this.date_cmnd = date_cmnd;
+    }
+
+    public User() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getId() {
         return id;
     }
@@ -78,7 +92,7 @@ public class User {
     }
 
     public Date getDate_cmnd() {
-        return date_cmnd;
+        return new java.sql.Date(date_cmnd.getTime());
     }
 
     public void setId(int id) {
