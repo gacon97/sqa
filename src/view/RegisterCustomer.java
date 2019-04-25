@@ -314,8 +314,9 @@ public class RegisterCustomer extends javax.swing.JFrame {
         User user = null;
         UserController userController = new UserController();
         user = userController.findUser(id);
-        RegisterCustomer registerCustomer = new RegisterCustomer();
-        registerCustomer.setVisible(true);
+        RegisterInformation registerInformation = new RegisterInformation(user);
+//        registerInformation.getUser(user);
+        registerInformation.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_tbUserMouseClicked
 

@@ -13,7 +13,7 @@ public class Branch {
     private String name, address;
     private int id;
 
-    public Branch(String name, String address, int id) {
+    public Branch(int id, String name, String address) {
         this.name = name;
         this.address = address;
         this.id = id;
